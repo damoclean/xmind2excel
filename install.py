@@ -8,18 +8,19 @@ from PyInstaller.__main__ import run
 # --noupx：不用upx压缩
 # --clean：清理掉临时文件
 
-def install1():
+def installMac():
     opts = ['-w','-F','-p=./common/xmind2execl.py','-i=./Icon/dog.icns',
             '--noupx', '--clean',
             r'./pet.py']
     run(opts)
 
 
-def install2():
+def installWin():
     opts = ['-w', '-F', '-p=./common/xmind2execl.py','-i=./Icon/dog.ico',
             '--noupx', '--clean',
             r'pet.py']
     run(opts)
 
 if __name__ == '__main__':
-    install1()
+    #installMac 打mac包，installWin 打win包
+    installMac()

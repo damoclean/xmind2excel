@@ -183,11 +183,15 @@ class Xmind2Excel(XlwtSeting):
         self.caseDict['Teststatus'] = '正常'
         Testpriority1 = value['makers'][0]
         if Testpriority1 == 'priority-1':
-            Testpriority = '高'
+            Testpriority = 'P0'
         elif Testpriority1 == 'priority-2':
-            Testpriority = '中'
+            Testpriority = 'P1'
+        elif Testpriority1 == 'priority-3':
+            Testpriority = 'P2'
+        elif Testpriority1 == 'priority-4':
+            Testpriority = 'P3'
         else:
-            Testpriority = '低'
+            Testpriority = 'p3'
         self.caseDict['Testpriority'] = Testpriority
         self.caseDict['Testoperator'] = self.operator
         self.rowNum = self.rowNum + 1

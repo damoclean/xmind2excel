@@ -1,0 +1,3 @@
+([('pet',
+   '/Users/xenos_liu/PycharmProjects/xmind2excel/dist/pet',
+   'EXECUTABLE')],)

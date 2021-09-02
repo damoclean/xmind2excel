@@ -11,14 +11,14 @@ from PyInstaller.__main__ import run
 def installMac():
     opts = ['-w','-F','-p=./common/xmind2execl.py','-i=./Icon/dog.icns',
             '--noupx', '--clean',
-            r'./pet.py']
+            r'./mainUIos.py']
     run(opts)
 
 
 def installWin():
     opts = ['-w', '-F', '-p=./common/xmind2execl.py','-i=./Icon/dog.ico',
             '--noupx', '--clean',
-            r'pet.py']
+            r'mainUIwin.py']
     run(opts)
 
 if __name__ == '__main__':
